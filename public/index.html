@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C° <-> F° Temperature Converter</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/9e357cf725.js" crossorigin="anonymous"></script>
+</head>
+<body class="min-h-100% bg-slate-100">
+    <div class="h-screen container-sm flex flex-row justify-center items-center shadow-md">
+        <div class="p-2 relative bg-slate-950 rounded-lg text-white">
+            <div class="p-4 flex flex-row justify-center items-stretch" id="unit-conv">
+                <h4 class="font-bold text-2xl w-40 text-right" data-unit="C" id="unit-1">
+                    Celsius&#40;C°&#41;
+                </h4>
+                <div class="cursor-pointer mx-8 grow bg-green-600 hover:bg-green-300 rounded-full" id="swap-icon-container">
+                    <i class="py-2 px-4 fa-solid fa-right-left" id="swap-icon"></i>
+                </div>
+                <h4 class="font-bold text-2xl w-40" data-unit="F" id="unit-2">
+                    Fahrenheit&#40;F°&#41;
+                </h4>
+            </div>
+            <div class="flex flex-row justify-center mt-2 text-black" id="user-input">
+                <input type="text" class="py-1 form-input font-medium text-lg text-center rounded-md">
+            </div>
+            <div class="text-center mt-6 pb-4" id="calculate-btn">
+                <button class="px-4 py-2 font-bold bg-blue-600 hover:bg-blue-300 rounded-md">Calculate</button>
+            </div>
+            <div class="display-result-card hidden">
+                <h4 class="text-2xl">Result:</h4>
+                <span class="block text-2xl">0</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
