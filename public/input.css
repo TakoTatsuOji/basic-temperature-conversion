@@ -28,21 +28,3 @@
         }
     }
 }
-
-@layer utilities {
-    .temperature-hotter {
-        color: rgb(222,88,66);
-    }
-    .temperature.hot {
-        color: rgb(252,208,89);
-    }
-    .temperature-neutral {
-        color: rgb(237,237,234);
-    }
-    .temperature-cold {
-        color: 	rgb(191,225,191);
-    }
-    .temperature-colder {
-        color: rgb(162,215,216);
-    }
-}
